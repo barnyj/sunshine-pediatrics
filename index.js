@@ -1,4 +1,4 @@
-require("dotenv").config();  // Load environment variables FIRST
+require("dotenv").config();  // ✅ Use CommonJS instead of ES6 import
 
 const express = require("express");
 const mongoose = require("mongoose");
@@ -7,6 +7,12 @@ const cors = require("cors");
 const app = express();
 app.use(express.json());
 app.use(cors());
+
+// ✅ Ensure MONGO_URI is loaded
+if (!process.env.MONGO_URI) {
+    console.error("❌ MONGO_URI is missing in environment variables");
+    process.exit(1);
+}
 
 // ✅ Import Appointment Routes
 const appointmentRoutes = require("./routes/appointments");
