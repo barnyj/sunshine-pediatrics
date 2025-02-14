@@ -26,6 +26,13 @@ app.get("/debug-routes", (req, res) => {
     res.json({ routes });
 });
 
+// ✅ Import & Use Admin & Patient Routes
+const adminRoutes = require("./routes/admin");
+const patientRoutes = require("./routes/patient");
+
+app.use("/admin", adminRoutes);
+app.use("/patient", patientRoutes);
+
 
 // ✅ Import Appointment Routes
 try {
