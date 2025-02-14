@@ -4,6 +4,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 
+
 const app = express();
 app.use(express.json()); // ✅ Ensure JSON parsing is loaded before routes
 app.use(cors());
@@ -29,7 +30,7 @@ app.get("/debug-routes", (req, res) => {
 // ✅ Import Appointment Routes
 try {
     console.log("📌 Attempting to load /appointments route...");
-    const appointmentRoutes = require("./routes/appointments"); 
+    const appointmentRoutes = require("./routes/Appointments");  // ✅ Use the new capitalized filename
     app.use("/appointments", appointmentRoutes);
     console.log("✅ /appointments route successfully loaded!");
 } catch (error) {
