@@ -1,0 +1,184 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fef9ef;
+    text-align: center;
+}
+
+/* Booking Container */
+.booking-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.3),
+                inset 5px 5px 10px rgba(255, 255, 255, 0.7);
+}
+
+/* Calendar Section */
+.calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Calendar Header */
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#monthYear {
+    font-size: 1.4rem;
+    font-weight: bold;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#prevMonth, #nextMonth {
+    background-color: #ffa69e;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#prevMonth:hover, #nextMonth:hover {
+    background-color: #ff6b5e;
+}
+
+/* Calendar Grid */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.calendar-day {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.available {
+    background: #6ec3f4;
+    color: white;
+}
+
+.booked {
+    background: #ddd;
+    color: gray;
+    pointer-events: none;
+}
+
+.selected {
+    background: #ff8b7a;
+}
+
+/* User Details Form */
+.user-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* Form Label Styles */
+.user-details label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+    display: block;
+}
+
+/* Form Input Styles */
+.user-details input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Time Slot Dropdown */
+#timeSlots {
+    padding: 12px;
+    border-radius: 5px;
+    width: 90%;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Booking Button */
+button {
+    margin-top: 15px;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffa69e;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ff6b5e;
+}
+
+/* Confirmation Message */
+#confirmation {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+}
+
+.return-home-button {
+    position: fixed;
+    top: 20px;
+    left: 120px;
+    z-index: 1000;
+    
+    background-color: #ffa69e;
+    color: white;
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.2),
+                inset 4px 4px 8px rgba(255, 255, 255, 0.7);
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Adjust the SVG size */
+.return-home-button svg {
+    width: 30px;
+    height: 30px;
+}
+
+/* Hover Effect */
+.return-home-button:hover {
+    background-color: #ff6b5e;
+}
+

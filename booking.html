@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <a href="../index.html" class="return-home-button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 6L9 12L15 18" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
+
+
+    <div class="booking-container">
+        <h2>Book Your Appointment</h2>
+
+        <!-- Calendar UI -->
+        <div class="calendar">
+            <div class="calendar-header">
+                <button id="prevMonth">←</button>
+                <h3 id="monthYear"></h3>
+                <button id="nextMonth">→</button>
+            </div>
+            <div class="calendar-grid" id="calendar"></div>
+        </div>
+
+        <!-- User Details -->
+        <div class="user-details">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your Name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="Enter your Email" required>
+            
+            <label for="email">Phone Number:</label>
+            <input type="number" id="number" placeholder="Enter a Mobile Phone" required>
+        </div>
+
+        <!-- Time Slot Selection -->
+        <label for="timeSlots">Select Time Slot:</label>
+        <select id="timeSlots"></select>
+
+        <!-- Booking Button -->
+        <button id="bookAppointment">Book Appointment</button>
+
+        <!-- Confirmation Message -->
+        <p id="confirmation"></p>
+    </div>
+
+    <script src="booking.js"></script>
+
+</body>
+</html>
