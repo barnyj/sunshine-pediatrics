@@ -13,6 +13,15 @@ app.get("/", (req, res) => {
     res.send("🚀 Server is running successfully!");
 });
 
+// ✅ If /appointment exists
+app.get("/debug-routes", (req, res) => {
+    res.json({
+        routes: app._router.stack
+            .filter(r => r.route)
+            .map(r => r.route.path)
+    });
+});
+
 // ✅ Debugging Log: Check if MongoDB URI is Loaded
 console.log("📌 MongoDB URI:", process.env.MONGO_URI);
 
