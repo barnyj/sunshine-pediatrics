@@ -1,0 +1,295 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realistic Book Page Flip</title>
+    <link rel="stylesheet" href="Sunshine CSS.css">
+
+</head>
+    <body>        
+        <!-- Navigation Bar -->
+        <div class="nav-bar">
+            <div class="hamburger-menu" onclick="toggleMenu()">☰</div>
+            <a href="booking app/booking.html" class="book-appt-button">Book Appointment</a>
+        </div>
+        
+        <!-- logo-->
+        <div class="logo-container">
+            <img src="images/Sunshine-Pediatrics-1.svg" alt="Sunshine Pediatrics Logo">
+        </div>
+        
+        
+        <!-- Sidebar Navigation -->
+        <div class="side-menu" id="sideMenu">
+            <button class="close-btn" onclick="toggleMenu()">×</button>
+            <nav>
+                <ul>
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="booking app/booking.html" target="_blank">Book an Appointment</a></li>
+                    <li><a href="#section2">Patient Portal</a></li>
+                    <li><a href="#section3">Services</a></li>
+                    <li><a href="#section3">Resources</a></li>
+                    <li><a href="#section3">About</a></li>
+                    <li><a href="#section3">Careers</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+            </nav>
+        </div>
+        
+        <div class="book-wrapper">
+            <div class="page-section" id="section1" >
+                <div class="page page-front">
+                    <div class="section-text">
+                        <h1>Welcome to Sunshine Pediatrics</h1>
+                        <p>At Sunshine Pediatrics, we prioritize 
+                        your child's health and well-being.
+                        Our dedicated team is here to provide 
+                        compassionate care in a friendly environment.</p>
+                        <div class="button-group">
+                            <button class="button"> New Patients</button>
+                            <button class="button is-alt"> Existing Patients</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="page page-back" >
+                    
+                </div>
+            </div>
+    
+            <div class="page-section" id="section2">
+                <div class="page page-front">
+                    <div class="section-text">
+                        <h2>We Commit to Exceptional Pediatric Healthcare for Your Child</h2>
+                        <p>At Sunshine Pediatrics, we prioritize the health and happiness of your child. 
+                        Our dedicated team is here to provide compassionate care tailored to each child's unique needs.</p>
+                        
+                        <div class="features">
+                            <ul>
+                                <li>
+                                    <h6>Quality Care</h6>
+                                    <p>We deliver personalized healthcare solutions to ensure your child's optimal growth and development.</p>
+                                </li>
+                                <li>
+                                    <h6>Family Focused</h6>
+                                    <p class="sub-text">Our practice fosters a supportive environment for families, promoting trust and open communication.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="page page-back">
+                    <div class="image-wrapper">
+                        <img src="images/Family & care.png">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="page-section" id="section3">
+                <div class="page page-front">
+                    <div class="section-text">
+                        <h1>Explore Our Innovative Healthcare Solutions</h1>
+                        <p>At Sunshine Pediatrics, we prioritize your child's health with cutting-edge 
+                           features designed for modern families. Experience the convenience of our 
+                           services tailored to meet your needs.</p>
+                    </div>
+                </div>
+                <div class="page page-back">
+                    <div class="features-wrapper">
+                        <ul>
+                            <div class="features-link">
+                                <li>
+                                    <h4>Effortless Online Appointment Booking</h4>
+                                    <p>Schedule your child's appointments with just a few clicks.</p>
+                                    <button>→</button>
+                                </li>
+                            </div>
+                            <div class="features-link">   
+                                <li>
+                                    <h4>Secure Patient Portal for Your Convenience</h4>
+                                    <p>Access medical records and billing securely online.</p>
+                                    <div><button>→</button></div>    
+                                </li>
+                            </div>
+                            <div class="features-link">
+                                <li>
+                                    <h4>Mobile Responsiveness for <br> On-the-Go Families</h4>
+                                    <p>Our website is designed to work seamlessly on any device.</p>
+                                    <div class="arrow-button"><button>→</button></div>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-section" id="section4">
+                <div><h1>Meet Our Team of Trained Healthcare Professionals</h1></div>
+                    <div class="page page-front">
+                    
+                        <div class="team-member">
+                            <img src="images/Dr.Emily.png">
+                            <p class="text_size_large">Dr. Emily</p>
+                            <p class="text_size_medium">Pediatrician</p>
+                            <p>Passionate about providing quality healthcare and fostering children's well-being.</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="images/Dr. Mark.png">
+                            <p class="text_size_large">Dr. Mark</p>
+                            <p class="text_size_medium">Allergist Expert</p>
+                            <p>Specializes in diagnosing and treating allergies in children with compassion.</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="images/Dr.James Photo.png">
+                            <p class="text_size_large">Dr. James</p>
+                            <p class="text_size_medium">Family Doctor</p>
+                            <p>Dedicated to supporting families and nurturing healthy childhood development.</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="images/Dr.Lisa Photo.png">
+                            <p class="text_size_large">Dr. Lisa</p>
+                            <p class="text_size_medium">Pediatric Specialist</p>
+                            <p>Expert in childhood illnesses, focused on preventive care and education.</p>
+                        </div>
+                    </div>
+                    <div class="page page-back">
+                        <div class="team-member">
+                            <img src="images/Nurse sarah Photo.png">
+                            <p class="text_size_large">Nurse Sarah</p>
+                            <p class="text_size_medium">Head Nurse</p>
+                            <p>Committed to ensuring a safe and comforting environment for all patients.</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="images/Ms. Jane.png">
+                            <p class="text_size_large">Ms. Jane</p>
+                            <p class="text_size_medium">Office Manager</p>
+                            <p>Ensures smooth operations and a welcoming atmosphere for families.</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="images/career opportunities.png">
+                            <p class="text_size_large">Explore Opportunities</p>
+                            <p class="text_size_medium">Career Openings</p>
+                            <p>Check out our current job listings <a href="">Here</a> and apply today! We are eager to meet you!</p>
+                        </div>
+                        
+                    </div>
+            </div>
+                
+            <div class="page-section" id="section5">
+                <div class="testimonial-section">
+                    <div class="testimonial-header">
+                        <h2>Customer Testimonials</h2>
+                        <p>See what our happy patients and families have to say about our care.</p>
+                    </div>
+                
+                    <div class="testimonials-container">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial">
+                            <div class="stars">★★★★★</div>
+                            <p>"Sunshine Pediatrics has been amazing for my child’s care. The doctors are kind and patient."</p>
+                            <div class="testimonial-footer">
+                                <img src="images/patient1.png" alt="Patient 1">
+                                <p class="text_size_medium">- Sarah Thompson</p>
+                            </div>
+                        </div>
+                
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial">
+                            <div class="stars">★★★★★</div>
+                            <p>"Highly recommend! The team is caring, and the facilities are top-notch."</p>
+                            <div class="testimonial-footer">
+                                <img src="images/patient2.png" alt="Patient 2">
+                                <p class="text_size_medium">- Janesse Carter</p>
+                            </div>
+                        </div>
+                
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial">
+                            <div class="stars">★★★★★</div>
+                            <p>"They make visits stress-free and provide great attention to every detail."</p>
+                            <div class="testimonial-footer">
+                                <img src="images/patient3.png" alt="Patient 3">
+                                <p class="text_size_medium">- Emily Johnson</p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial">
+                            <div class="stars">★★★★★</div>
+                            <p>"They make visits stress-free and provide great attention to every detail."</p>
+                            <div class="testimonial-footer">
+                                <img src="images/patient3.png" alt="Patient 3">
+                                <p class="text_size_medium">- Emily Johnson</p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 5 -->
+                        <div class="testimonial">
+                            <div class="stars">★★★★★</div>
+                            <p>"They make visits stress-free and provide great attention to every detail."</p>
+                            <div class="testimonial-footer">
+                                <img src="images/patient3.png" alt="Patient 3">
+                                <p class="text_size_medium">- Emily Johnson</p>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 6 -->
+                        <div class="testimonial">
+                            <div class="stars">★★★★★</div>
+                            <p>"They make visits stress-free and provide great attention to every detail."</p>
+                            <div class="testimonial-footer">
+                                <img src="images/patient3.png" alt="Patient 3">
+                                <p class="text_size_medium">- Emily Johnson</p>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <!-- Slider Controls -->
+                    <div class="slider-controls">
+                        <button class="prev-slide">←</button>
+                        <button class="next-slide">→</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer page-section" id="section6">
+                <div class="footer-upper">
+                    
+                    <div class="footer-links">
+                        <img src="images/Sunshine-Pediatrics-1.svg">
+
+                        <div  class="footer-links-container">
+                            <a href="">Contact Us</a>
+                            <a href="">What we provide</a>
+                            <a href="">Patient Portal</a>
+                            <a href="">Blog Articles</a>
+                            <a href="">FAQs</a>
+                        </div>
+                    </div>
+
+                    <div class=" form-wrapper">
+                        <form class="footer-form">
+                            <input type="email" placeholder="Enter your email">
+                            <button type="submit">Join</button>
+                        </form>
+                        <p class="sub-text">By subscribing, you agree to our Privacy Policy.</p>
+                    </div>
+                </div>
+
+                <div class="footer-lower">
+                    <Div class="footer-links-container">
+                        <a href="">Privacy Policy</a>
+                        <a href="">Terms of Service</a>
+                        <a href="">Cookies Settings</a>
+                    </Div>
+                    
+
+                    <p class="sub-text">© 2024 Sunshine Pediatrics. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        <script src="menu.js"></script>
+    </body>
