@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Portal - Sunshine Pediatrics</title>
+</head>
+<body>
+    <h1>Patient Portal</h1>
+    <input type="email" id="email" placeholder="Enter your email">
+    <button onclick="loadPatientAppointments()">View My Appointments</button>
+    <div id="appointments"></div>
+
+    <script>
+        async function loadPatientAppointments() {
+            const email = document.getElementById("email").value;
+            const response = await fetch(`https://sunshine-pediatrics-backend.onrender.com/patient/${email}/appointments`);
+            const data = await response.json();
+            document.getElementById("appointments").innerHTML = JSON.stringify(data, null, 2);
+        }
+    </script>
+</body>
+</html>
