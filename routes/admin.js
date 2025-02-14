@@ -8,6 +8,10 @@ const Appointment = require("../models/Appointment");
 router.get("/appointments", async (req, res) => {
     try {
         const appointments = await Appointment.find();
+        
+        // ✅ Log retrieved appointments for debugging
+        console.log("📌 Admin Appointments:", appointments);
+        
         res.json(appointments);
     } catch (error) {
         console.error("❌ Error fetching appointments:", error);
