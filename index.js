@@ -15,12 +15,16 @@ app.get("/", (req, res) => {
 
 // ✅ Debugging Route: List Registered Routes
 app.get("/debug-routes", (req, res) => {
-    res.json({
-        routes: app._router.stack
-            .filter(r => r.route)
-            .map(r => r.route.path)
-    });
+    console.log("📌 Debugging Routes:");
+    const routes = app._router.stack
+        .filter(r => r.route)
+        .map(r => r.route.path);
+
+    console.log(routes);  // ✅ Log routes to Render logs
+
+    res.json({ routes });
 });
+
 
 // ✅ Import Appointment Routes
 try {
