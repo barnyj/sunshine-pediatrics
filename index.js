@@ -30,7 +30,7 @@ app.get("/debug-routes", (req, res) => {
 // ✅ Import Appointment Routes
 try {
     console.log("📌 Attempting to load /appointments route...");
-    const appointmentRoutes = require("./routes/Appointments");  // ✅ Use the new capitalized filename
+    const appointmentRoutes = require("./routes/appointments");
     app.use("/appointments", appointmentRoutes);
     console.log("✅ /appointments route successfully loaded!");
 } catch (error) {
