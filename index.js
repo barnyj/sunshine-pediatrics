@@ -13,16 +13,18 @@ app.get("/", (req, res) => {
     res.send("🚀 Server is running successfully!");
 });
 
-// ✅ Ensure MONGO_URI is loaded
-if (!process.env.MONGO_URI) {
-    console.error("❌ MONGO_URI is missing in environment variables");
-    process.exit(1);
+// ✅ Debugging Log: Check if MongoDB URI is Loaded
+console.log("📌 MongoDB URI:", process.env.MONGO_URI);
+
+// ✅ Import Appointment Routes
+try {
+    console.log("📌 Attempting to load /appointments route...");
+    const appointmentRoutes = require("./routes/appointments");
+    app.use("/appointments", appointmentRoutes);
+    console.log("✅ /appointments route successfully loaded!");
+} catch (error) {
+    console.error("❌ Error loading /appointments route:", error);
 }
-
-// ✅ Import Appointment Routes (Make sure path is correct)
-const appointmentRoutes = require("./routes/appointments");  
-app.use("/appointments", appointmentRoutes);  
-
 const PORT = process.env.PORT || 5000;
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log("✅ MongoDB Connected"))
